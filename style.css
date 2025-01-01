@@ -1,0 +1,141 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar a.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+  transition: all 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.search-bar {
+  display: flex;
+  align-items: start;
+}
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 23%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chart-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  height: 300px;
+}
+
+h2.text-black {
+  margin-top: 20px;
+  color: #434343;
+  font-weight: bold;
+}
+
+.menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-icons {
+  margin-bottom: 35px;
+}
+
+.active a {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .dashboard-card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .search-bar input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .search-bar input {
+    width: 80px;
+  }
+}
